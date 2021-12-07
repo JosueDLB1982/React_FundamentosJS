@@ -20,7 +20,7 @@
 // console.log(mensaje)
 
 // retornar objeto
-const addition = ((numberA, numberB) => {
+const addition = ((numberA = 0, numberB = 0) => { // parámetro por defecto, en caso de no pasar nada, toma ese.
     return {
         result: numberA + numberB,
         message: 'Hola Josue. estamos haciendo destructuring en el return'
