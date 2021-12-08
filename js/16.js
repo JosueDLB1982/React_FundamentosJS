@@ -35,6 +35,6 @@ console.log(result5)
 const result6 = numbers.filter(number => number > 15)
 console.log(result6)
 
-numbers.forEach(number => console.log(number))
+numbers.forEach(number => console.log(number/2))// imprime los elementos del array dividido entre 2
 
 
