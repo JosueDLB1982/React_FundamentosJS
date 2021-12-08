@@ -37,7 +37,7 @@ console.table(technologies)
 
 /* Reemplazar elementos del array */
 
-const newTechnologies = technologies.map((tech) => {
+const newTechnologies = technologies.map(tech => { // Como solo paso el parámetro tech, no necesito meterlo entre ()
     if (tech === 'Python') return 'Node.js'
     else return tech
 })
