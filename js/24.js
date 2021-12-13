@@ -1,4 +1,5 @@
-// 
+// Manipulación del HTML desde JavaScript
+
 const heading = document.querySelector('#heading')
 heading.textContent = 'Probando el DOM / Modificando el HTML desde JavaScript'
 console.log(heading.textContent)
@@ -10,4 +11,9 @@ console.log(inputNombre.textContent)
 
 const links = document.querySelectorAll('.navegacion a')
 console.log(links)
-links.forEach((link) => link.textContent = 'Nuevo enlace')
+
+i = 0
+links.forEach((link) => {
+    i++
+    link.textContent = `Nuevo Enlace ${i}`
+})
