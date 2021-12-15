@@ -1,12 +1,6 @@
-/* 
-El DOM
+// querySelectorAll
 
-Selectores del DOM
-*/
-
-const heading = document.querySelector('#heading')
-console.log(heading.textContent)
-console.log(heading.tagName)
-console.log(heading.classList)
-console.log(heading.id)
-console.log(heading.className)
+const links = document.querySelectorAll('.navegacion a')
+console.log(links)
+console.log(links[3].textContent)
+links.forEach((link) => {console.log(link.textContent)})
